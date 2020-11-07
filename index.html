@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
-  $(document).ready(function() {
-   $("#div1").hide();   
-     $("#button1").click(function() {      
-      $("#div1").toggle(1000);  
-      $("#button1").hide();  
-       return false;
-     });
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
   });
- </script>
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
 <style>
 body {
   background-image: url(https://4kwallpapers.com/images/wallpapers/valorant-pc-games-2020-games-3840x2160-1267.jpg);
@@ -38,7 +38,7 @@ body {
     <h1><a href="https://playvalorant.com/zh-tw/" class="button">Going to Valorant Official website.</a></h1>
     <p class="white-text">那就嚷我來介紹一下這遊戲我喜歡的角色吧</p>
     <p class="white-text">愷宙(Killjoy)</p>
-    <button id="button1">顯示</button>
+    <img src="https://gameffine.com/wp-content/uploads/2020/07/KILLJOY.png" align="center" height="700" width="900">
     <div id="div1" style="display: none;"><img src="https://gameffine.com/wp-content/uploads/2020/07/KILLJOY.png" id="img1"></div>
     <p class="white-text">守衛型角色，善用各種機器人來為隊伍取得優勢</p>
     <p class="white-text">1.重火力砲塔(砲塔): 透過E放置(看個人按鍵設定)，在偵測到敵人時會對敵人造成12點的傷害，現在改版為放置距離超過40公尺便會停機，回到範圍內需要再啟動，重新放置需要10秒</p>
@@ -48,6 +48,8 @@ body {
     <p class="white-text">總結: 在剛開始的準備階段需要預估敵人的走向，並對此思考機器該放在哪裡，那些位置可以帶來奇效，藉此來為戰局帶來優勢。可以說是個很忙的腳色</p>
     <p class="white-text">小技巧: 技能都是可以被破壞的，所以可以嘗試拿來吸引砲火、拉槍線、當誘餌。放在以前CD時間太長基本不能這樣做，不過現在改版大幅調低了CD，所以歡迎大家可以嘗試看看</p>
     <p class="white-text">到底部了，希望可以再為大家帶來一些角色的講解(如果我想要做的話)，那麼下次再見，掰掰!<!p>
+      <button id="hide">隱藏資訊</button>
+      <button id="show">顯示資訊</button>
     </center>
   </body>
 </html>
